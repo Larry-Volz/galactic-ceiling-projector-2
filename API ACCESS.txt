@@ -1,0 +1,6 @@
+Admin API Access token: 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
+
+API Key: 15c4bbb03377791a8a5345248bdcac3d
+
+API Secret Key: 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
+
