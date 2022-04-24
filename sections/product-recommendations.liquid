@@ -6,12 +6,12 @@
           <div class="section-header text-center">
             <h2>{{ section.settings.heading | escape }}</h2>
           </div>
-        {%- endif -%}
+        {%- endif -%} 
         <ul class="grid grid--uniform grid--view-items">
           {%- for product in recommendations.products -%}
             <li class="grid__item small--one-half medium-up--one-quarter">
               {% include 'product-card-grid', max_height: 250, product: product, show_vendor: section.settings.show_vendor %}
-            </li>
+            </li> 
           {%- endfor -%}
         </ul>
       </div>

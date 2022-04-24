@@ -1,4 +1,4 @@
-<div class="page-width">
+<div class="page-width"> 
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h4 class="h2">{{ section.settings.title | escape }}</h4>
@@ -9,7 +9,7 @@
     {%- assign block_width_mobile = '' -%}
 
     {% for block in section.blocks %}
-      {% case block.settings.width %}
+      {% case block.settings.width %} 
         {% when '25%' %}
           {%- assign max_height = 250 -%}
           {%- assign block_width = 'medium-up--one-quarter' -%}

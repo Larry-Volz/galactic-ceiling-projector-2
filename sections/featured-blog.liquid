@@ -8,7 +8,7 @@
   {%- assign blog = blogs[section.settings.blog] -%}
 
   {% unless blog.articles_count == 0 %}
-    <ul class="grid grid--uniform grid--blog">
+    <ul class="grid grid--uniform grid--blog"> 
       {% for article in blog.articles limit: section.settings.post_limit %}
         <li class="grid__item medium-up--one-third">
           <article aria-labelledby="FeaturedBlogTitle-{{ forloop.index0 }}-{{ section.id }}">

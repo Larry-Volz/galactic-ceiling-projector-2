@@ -1,5 +1,5 @@
 <div class="page-width">
-  {% if section.settings.title != blank %}
+  {% if section.settings.title != blank %} 
     <div class="section-header text-center">
       <h2>{{ section.settings.title | escape }}</h2>
     </div>
@@ -7,7 +7,7 @@
 
   {%- assign collection = collections[section.settings.collection] -%}
 
-  {% case section.settings.grid %}
+  {% case section.settings.grid %} 
     {% when 2 %}
       {%- assign max_height = 530 -%}
       {%- assign grid_item_width = 'medium-up--one-half' -%}

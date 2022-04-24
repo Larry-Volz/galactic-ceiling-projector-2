@@ -6,10 +6,10 @@
     unless it is blank, in that case a ratio of 2:1 will be used.
   {% endcomment %}
 
-  {%- assign first_block = section.blocks[0] -%}
+  {%- assign first_block = section.blocks[0] -%} 
   {%- if first_block.settings.image.aspect_ratio == blank -%}
     {%- assign min_aspect_ratio = 2.0 -%}
-  {%- else -%}
+  {%- else -%} 
     {%- assign min_aspect_ratio = first_block.settings.image.aspect_ratio -%}
   {%- endif -%}
   {% assign wrapper_height = 100 | divided_by: min_aspect_ratio %}
